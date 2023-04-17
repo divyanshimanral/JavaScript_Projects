@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator using Functions</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <input type="text" id="input" placeholder="0" name="display" />
+        </div>
+        <!-- <button onclick="clearInput()" id="bigBtn" class="op">AC</button> -->
+        <button onclick="clearInput()" class="op">AC</button>
+        <button onclick="deleting()" class="op">DEL</button>
+        <button onclick="document.getElementById('input').value += '.'" class="op">
+          .
+        </button>
+        <button onclick="divide()" class="op">/</button>
+
+        <button onclick="document.getElementById('input').value += '7'">
+          7
+        </button>
+        <button onclick="document.getElementById('input').value += '8'">
+          8
+        </button>
+        <button onclick="document.getElementById('input').value += '9'">
+          9
+        </button>
+        <button onclick="multiply()" class="op">*</button>
+
+        <button onclick="document.getElementById('input').value += '4'">
+          4
+        </button>
+        <button onclick="document.getElementById('input').value += '5'">
+          5
+        </button>
+        <button onclick="document.getElementById('input').value += '6'">
+          6
+        </button>
+        <button onclick="subtract()" class="op">-</button>
+
+        <button onclick="document.getElementById('input').value += '1'">
+          1
+        </button>
+        <button onclick="document.getElementById('input').value += '2'">
+          2
+        </button>
+        <button onclick="document.getElementById('input').value += '3'">
+          3
+        </button>
+        <button onclick="add()" class="op">+</button>
+
+        <button onclick="document.getElementById('input').value += '00'">
+          00
+        </button>
+        <button onclick="document.getElementById('input').value += '0'">
+          0
+        </button>
+        <button onclick="equals()" class="equal op" id="bigBtn2">=</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
