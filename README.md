@@ -4,3 +4,5 @@
 3.color-flipper - rgb, hex, random
 4.Random gradient generator
 5. Reviews project
+6.Slider project
+7.Tic-Tac-Toe game
