@@ -9,7 +9,6 @@ body{
 }
 .wrapper{
     width: 400px;
-    /* border: 1px solid white; */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -45,7 +44,7 @@ body{
     font-weight: 600;
     text-transform: capitalize;
 }
-#btn, #btn2{
+#btn, #save-btn, .btn{
     background: #fff;
     border: none;
     padding: 15px 45px;
@@ -55,7 +54,7 @@ body{
     color: #245953;
     cursor: pointer;
 }
-#btn2{
+#save-btn{
     padding: 15px 20px;
     color: red;
 }
@@ -66,4 +65,9 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+#saved-quotes{
+    height: 100vh;
+    background: #B2A4FF;
+    color: mediumorchid;
 }
