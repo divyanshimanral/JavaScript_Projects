@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+body{
+    background: #B2A4FF;
+}
+.wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 50%;
+   margin: 5rem auto;
+   padding: 5rem 0;
+   /* border: 2px solid red; */
+   text-align: center;
+   background-color: #FFB4B4;
+   border-radius: 30px;
+}
+#quote{
+    font-size: 20px;
+    font-weight: 700;
+    color: #002B5B;
+}
+#author{
+    font-size: 20px;
+    color: rgb(216, 14, 176);
+    font-weight: bold;
+    padding: 1rem;
+}
+.actions{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+}
+
+#saved-quotes-container{
+    /* border: 2px solid red; */
+    text-align: center;
+    list-style: none;
+    font-size: 1rem;
+}
+.btn{
+    padding: 8px 16px;
+    margin: 10px 30px;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #245953;
+    cursor: pointer;
+}
+.lis{
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.space{
+    height: 100px;
+}
