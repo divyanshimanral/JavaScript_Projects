@@ -8,3 +8,4 @@
 7.Tic-Tac-Toe game
 8.flipping card
 9. advance quote generator -- uses api for fetching data and has different btns to display new quote, save quote, display saved quotes.
+10.notesApp- functions array method and dom
