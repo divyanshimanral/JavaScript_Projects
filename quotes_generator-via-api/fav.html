@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quotes</title>
+  </head>
+  <style>
+    body{
+        background: rgb(0, 86, 86);
+    }
+    #quote-text{
+        color: magenta;
+    }
+    #quote-author{
+        color: maroon;
+    }
+  </style>
+  <body>
+    <!-- Add elements for displaying quotes here -->
+    <div id="quote-text"></div>
+    <div id="quote-author"></div>
+  </body>
+  <script>
+const url = "https://api.quotable.io/random"; 
+    let getQuote = () => {
+      fetch(url)
+        .then((data) => data.json())
+        .then((item) => {
+          const quoteText = item.content;
+          const quoteAuthor = item.author;
+
+          // Open the quotes.html page in a new window
+          const quotesPage = window.open("quotes.html");
+
+          // Once the page is loaded, set the quote and author elements
+          quotesPage.onload = () => {
+            const quoteTextElement =
+              quotesPage.document.getElementById("quote-text");
+            const quoteAuthorElement =
+              quotesPage.document.getElementById("quote-author");
+            quoteTextElement.innerText = quoteText;
+            quoteAuthorElement.innerText = quoteAuthor;
+          };
+        });
+       return quoteAuthor;
+       return quoteText;
+    };
+  </script>
+</html>
