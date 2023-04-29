@@ -10,3 +10,4 @@
 9. advance quote generator -- uses api for fetching data and has different btns to display new quote, save quote, display saved quotes.
 10.notesApp- functions array method and dom
 11.weatherApp-- functions, api, dom
+12.Rock, paper and scisoors game -- if/else statements, dom, functions
