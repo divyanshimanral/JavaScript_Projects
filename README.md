@@ -11,3 +11,4 @@
 10.notesApp- functions array method and dom
 11.weatherApp-- functions, api, dom
 12.Rock, paper and scisoors game -- if/else statements, dom, functions
+13.Random PAssword generator -- functions, while loop and some dom
