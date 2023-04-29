@@ -25,16 +25,16 @@ h1 {
   text-transform: uppercase;
 }
 .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    min-height: calc(100vh - 8rem);
-    margin-top: 3rem;
-    gap: 10px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  min-height: calc(100vh - 8rem);
+  margin-top: 3rem;
+  gap: 10px;
+}
+
 .comp,
 .user,
 .res {
@@ -65,6 +65,13 @@ button {
 }
 button:focus {
   background: rgba(14, 233, 14, 0.774);
+}
+.restart {
+  position: absolute;
+  right: 50px;
+  background: red;
+  color: #fff;
+  font-size: 15px;
 }
 
 /* ******************media-queries********************** */
