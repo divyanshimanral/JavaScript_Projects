@@ -49,6 +49,7 @@ const cardArray = [
   },
 ];
 
+// a way to get randomonly sorted elements of the object 
 cardArray.sort(() => 0.5 - Math.random());
 
 const gridDisplay = document.querySelector("#grid");
@@ -104,8 +105,8 @@ function flipCard() {
   let cardId = this.getAttribute("data-id");
   cardsChosen.push(cardArray[cardId].name);
   cardsChosenIds.push(cardId);
-  console.log(cardsChosen);
-  console.log(cardsChosenIds);
+  // console.log(cardsChosen);
+  // console.log(cardsChosenIds);
   this.setAttribute("src", cardArray[cardId].img);
   if (cardsChosen.length === 2) {
     setTimeout(checkMatch, 500);
