@@ -3,7 +3,9 @@
     margin: 0;
     font-family: 'Itim', cursive;
 }
-
+body{
+    overflow: hidden;
+}
 .background {
     background-color: #12181B;
     height: 100%;
@@ -14,7 +16,7 @@
     color: white;
     text-align: center;
     font-size: 40px;
-    margin-top: 10%;
+    margin-top: 4.5rem;
 }
 
 .display {
@@ -35,7 +37,6 @@
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
-
 }
 
 .tile {
