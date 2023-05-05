@@ -9,6 +9,7 @@ body{
     font-size: 3em;
     text-align: center;
     color: #1f1f1f;
+    text-decoration:underline;
 }
 .container{
     max-width: 1100px;
@@ -51,8 +52,10 @@ body{
 .gradient{
     width: 15em;
     height: 15em;
-    border-radius: 50%;
+    border-radius: 82px 0px 83px 0px;
+    /* border-radius: 50%; */
     background-color: #333;
+    border: 2px solid red;
 }
 .card button{
     border: none;

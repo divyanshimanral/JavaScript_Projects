@@ -1,4 +1,4 @@
-const container = document.querySelector('.container')
+const container = document.querySelector('.container');
 
 const cardAmount = 9;
 
@@ -25,33 +25,39 @@ for (let i = 0; i < cardAmount; i++){
 
     container.innerHTML += `
     <div class="card">
-     <div class="card-header">
-      <h3 class="card-id">00${i + 1}</h3>
-      <button class="type">Linear</button>
-     </div>
-     <div class="card-body">
-      <div 
-        class="gradient"  
-        style="background: linear-gradient(45deg, ${color1}, ${color2});"
-      ></div>
-     </div>
-     <div class="card-footer">
-      <div>
-        <span class="color1">${color1}</span>
-        <span class="color1">${color2}</span>
+
+      <div class="card-header">
+       <h3 class="card-id">00${i + 1}</h3>
+       <button class="type">Linear</button>
       </div>
-     <button class="copy">Copy CSS</button>
+
+      <div class="card-body">
+       <div 
+         class="gradient"  
+         style="background: linear-gradient(45deg, ${color1}, ${color2});"
+       ></div>
       </div>
+
+      <div class="card-footer">
+       <div>
+         <span class="color1">${color1}</span>
+         <span class="color2">${color2}</span>
+       </div>
+      <button class="copy">Copy CSS</button>
+      </div> 
+
     </div>
     `;
 }
 
+// setting up the graidents 
 document.addEventListener("click",(e) => {
-    if(e.target && e.target.classList.container("type")) {
+    if(e.target && e.target.classList.contains("type")) {
         bool = !bool;
 
-        const gradient = e.target.parentElement.parentElement.children.firstElementChild
-        const id = parentInt(
+        const gradient =e.target.parentElement.parentElement.children[1].firstElementChild
+        // console.log(e.target);
+        const id = parseInt(
             e.target.parentElement.parentElement.children[0]
             .firstElementChild.innerText.substr(2)) - 1;
             
@@ -65,3 +71,17 @@ document.addEventListener("click",(e) => {
     }
 });
 
+// for copying the code 
+document.addEventListener("click", (e) => {
+  if(e.target && e.target.classList.contains("copy")) {
+    const gradient = e.target.parentElement.parentElement.children[1].firstElementChild;
+    const gradientStyle = gradient.style.background
+    const input = document.createElement("input");
+    input.value = gradientStyle
+    document.body.appendChild(input);
+    input.select()
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert("Gradient CSS copied to clipboard")
+  }
+})

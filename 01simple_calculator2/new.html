@@ -11,12 +11,15 @@
     <div class="container">
       <div class="calculator">
         <div class="display">
-          <input type="text" id="input" placeholder="0" name="display" />
+          <input type="text" id="input" placeholder="0" name="display" autocomplete="off"/>
         </div>
         <!-- <button onclick="clearInput()" id="bigBtn" class="op">AC</button> -->
         <button onclick="clearInput()" class="op">AC</button>
         <button onclick="deleting()" class="op">DEL</button>
-        <button onclick="document.getElementById('input').value += '.'" class="op">
+        <button
+          onclick="document.getElementById('input').value += '.'"
+          class="op"
+        >
           .
         </button>
         <button onclick="divide()" class="op">/</button>
