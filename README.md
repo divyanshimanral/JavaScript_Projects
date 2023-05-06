@@ -13,3 +13,5 @@
 12.Rock, paper and scisoors game -- if/else statements, dom, functions
 13.Random PAssword generator -- functions, while loop and some dom
 14. MemoryGame -- Json,Dom,functions,conditionals
+15. Modals - dom, functions.
+16. Random Emoji generator - Dom and events
