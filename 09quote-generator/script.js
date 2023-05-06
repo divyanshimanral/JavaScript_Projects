@@ -52,7 +52,7 @@ const displaySavedQuotes = () => {
   // Create a new list element for each saved quote
   savedQuotes.forEach((quote, index) => {
     const li = document.createElement("li");
-    li.classList.add('lis');
+    li.classList.add('list');
     li.textContent = `${quote.quote} ${quote.author}`;
 
     // Add a button to remove the quote from the list
