@@ -15,3 +15,4 @@
 14. MemoryGame -- Json,Dom,functions,conditionals
 15. Modals - dom, functions.
 16. Random Emoji generator - Dom and events
+17. Accordion - Dom, css
