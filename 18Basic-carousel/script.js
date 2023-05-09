@@ -22,8 +22,8 @@ btn_previous.addEventListener("click", function(event) {
     return setImg()
 })
 
-btn_next.addEventListener("click", function(event) {
-    if (i >= images.length-1)
+btn_next.addEventListener("click", function (event) {
+    if(i >= images.length-1)
     i = -1
     i++
     return setImg()
@@ -32,3 +32,9 @@ btn_next.addEventListener("click", function(event) {
 function setImg() {
     return image_container.setAttribute("src", images[i])
 }
+random.addEventListener("click", function (e) {
+    // console.log(e.target)
+    let i = Math.floor(Math.random()*images.length)
+    console.log(i)
+    image_container.setAttribute("src", images[i])
+})
